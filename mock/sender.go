@@ -4,14 +4,14 @@ import (
 	"context"
 	"errors"
 	"math/rand"
-	"multithreading/homework/message/http"
-	httpRec "multithreading/homework/receiver/http"
+	"multithreading/multithreading-homework/message/http"
+	httpRec "multithreading/multithreading-homework/receiver/http"
 	"time"
 )
 
 var letterRunes = []rune("abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ")
 
-//EmulateUser Can emulate input to given receiver, context needed to end execution after cancellation function was called
+// EmulateUser Can emulate input to given receiver, context needed to end execution after cancellation function was called
 func EmulateUser(receiver httpRec.Receiver[string, http.Message[string]], ctx context.Context) {
 	go func() {
 		rand.Seed(time.Now().UnixNano())

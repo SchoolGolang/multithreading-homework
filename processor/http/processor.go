@@ -3,8 +3,8 @@ package http
 import (
 	"errors"
 	"fmt"
-	"multithreading/homework/logger"
-	"multithreading/homework/message/http"
+	"multithreading/multithreading-homework/logger"
+	"multithreading/multithreading-homework/message/http"
 )
 
 type Processor[U any, T http.Message[U]] struct{}

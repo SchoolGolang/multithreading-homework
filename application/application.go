@@ -1,14 +1,13 @@
 package application
 
 import (
-	"context"
 	"errors"
 	"fmt"
-	"multithreading/homework/logger"
-	"multithreading/homework/message/http"
-	"multithreading/homework/mock"
-	httpProc "multithreading/homework/processor/http"
-	httpRec "multithreading/homework/receiver/http"
+	"multithreading/multithreading-homework/logger"
+	"multithreading/multithreading-homework/message/http"
+	"multithreading/multithreading-homework/mock"
+	httpProc "multithreading/multithreading-homework/processor/http"
+	httpRec "multithreading/multithreading-homework/receiver/http"
 )
 
 func Run() {

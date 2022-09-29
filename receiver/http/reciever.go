@@ -2,8 +2,8 @@ package http
 
 import (
 	"fmt"
-	"multithreading/homework/logger"
-	"multithreading/homework/message/http"
+	"multithreading/multithreading-homework/logger"
+	"multithreading/multithreading-homework/message/http"
 )
 
 type Receiver[U any, T http.Message[U]] struct {
